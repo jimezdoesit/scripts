@@ -1,0 +1,19 @@
+####Please run this script from pet-itjumpbox only####
+
+PSSH is a command utility for sending one command to multiple servers. The PSSH package is needed for this script to work.
+
+Copy the pssh directory from the scripts directory to your ~/ directory of choice before using. 
+
+pssh_passwd.py will prompt for a password for a one time command execution. This script pulls frm the hostnames file for machines(ip addresses) and logs stderr to the log directory for individual nodes. If you want a complete logging of everything to both the terminal & the logfile file just hit the [y] at the prompt.
+
+pssh_sshkey.py will not prompt for a password but rather use your public sshkey for authentication. This script pull from the hostname file for machines(FQDN) andlogs stderr to the log directory for individual nodes. If you want complete logging of everthing to both terminal & the logfile file just hit the [y] at the prompt.
+
+##################################################
+
+Example of below usage.
+
+For puppet certificate related issues run the below commands to reconnect puppet nodes/servers to puppet.
+
+rm -Rfv /etc/puppetlabs/puppet/ssl
+
+/opt/puppetlabs/bin/puppet agent -t
