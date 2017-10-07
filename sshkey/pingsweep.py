@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#This script requires the fping package to be installed before use
 import os
 import socket
 import subprocess
