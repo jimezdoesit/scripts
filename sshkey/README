@@ -1,4 +1,4 @@
-****Please only run these scripts from pet-itjumpbox****
+****only run these scripts from your local server****
 
 Copy the sshkey directory from the scripts directory to your ~/ of choice before using.
 

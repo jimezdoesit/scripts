@@ -1,4 +1,4 @@
-####Please run this script from pet-itjumpbox only####
+####run this script from local server only####
 
 PSSH is a command utility for sending one command to multiple servers. The PSSH package is needed for this script to work.
 
@@ -10,10 +10,3 @@ pssh_sshkey.py will not prompt for a password but rather use your public sshkey 
 
 ##################################################
 
-Example of below usage.
-
-For puppet certificate related issues run the below commands to reconnect puppet nodes/servers to puppet.
-
-rm -Rfv /etc/puppetlabs/puppet/ssl
-
-/opt/puppetlabs/bin/puppet agent -t
