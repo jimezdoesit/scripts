@@ -1,0 +1,3 @@
+This is a simple Puppet module designed to be used with my R10k demonstration.
+
+There's nothing of value to see here, move along...
